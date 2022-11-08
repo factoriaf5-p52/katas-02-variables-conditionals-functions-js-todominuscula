@@ -70,7 +70,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "KO").to.be.true;
     })
 
     it("comparando cadenas (strings)", () => {
@@ -86,7 +86,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "pikachu").to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (1)", () => {
@@ -103,7 +103,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con Pepperoni").to.be.true;
     })
 
     it("Interpolación de cadenas (strings) (2)", () => {
@@ -120,7 +120,7 @@ describe("condicionales en javascript", () => {
         }
 
         // substituye ??? por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Pizza con Piña").to.be.true;
     })
 })
 
