@@ -4,12 +4,12 @@ const expect = chai.expect;
 describe("Variables en JS", () => {
     it("Completa todas las constantes que faltan", () => {
 
-        let a = 10
-        let b = 1.34
-        let c = true
-        let d = "Buenos días"
-        let e = "Pepe"
-        let f = "Buenos días, pepe"
+        let a = 10;
+        let b = 1.34;
+        let c = true;
+        let d = "Buenos días";
+        let e = "Pepe";
+        let f = "Buenos días, pepe";
 
         expect(a).to.equal(10);
         expect(b).to.equal(1.34);
@@ -22,14 +22,14 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
         let a = 11;
-        let b = 0.34
-        let c = 10
-        let d = 0
-        let e = 340
-        let f = 1000
-        let g = 1
-        let x = 2222222
-        let y = 232323
+        let b = 0.34;
+        let c = 10;
+        let d = 0;
+        let e = 340;
+        let f = 1000;
+        let g = 1;
+        let x = 2222222;
+        let y = 232323;
 
         expect(a + b).to.equal(11.34);
         expect(a * c).to.equal(110);
@@ -43,10 +43,10 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
-        let b = 100
-        let c = undefined
-        let d = "hola"
-        let n = "b"
+        let b = 100;
+        let c = undefined;
+        let d = "hola";
+        let n = "b";
 
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
@@ -129,6 +129,7 @@ describe("Funciones en JS", () => {
     function f(a, b, c) {
         return b - a + 4 * c;
     }
+    
 
     function g(n, m) {
         return `Son ${m} y ${n}`;
@@ -154,7 +155,7 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === 28).to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (2)", () => {
@@ -163,16 +164,16 @@ describe("Funciones en JS", () => {
 
 
         // substituye "???" por el valor que tiene la variable "result"        
-        expect(result === "???").to.be.true;
+        expect(result === "Son Pinky y Cerebro").to.be.true;
     })
 
     it("Cuál es el resultado de invocar la función? (3)", () => {
 
         // substituye "???" por el resultado en cada caso
-        expect(h("khaleesi mother of dragons breaker of chains") === "???").to.be.true;
-        expect(h("sarah") === "???").to.be.true;
-        expect(h("bob") === "???").to.be.true;
-        expect(h("robertson") === "???").to.be.true;
+        expect(h("khaleesi mother of dragons breaker of chains") === "very long").to.be.true;
+        expect(h("sarah") === "adecquate").to.be.true;
+        expect(h("bob") === "too short").to.be.true;
+        expect(h("robertson") === "long").to.be.true;
     })
 
 })
